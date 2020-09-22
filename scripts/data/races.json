@@ -1,6 +1,346 @@
 [
   {
+    "name": "Dragonborn",
+    "size": "Medium",
+    "average_lifespan": 80,
+    "average_maturity": 15,
+    "common_alignments": [
+      "LG",
+      "LE",
+      "CG",
+      "CE",
+      "NG",
+      "NE"
+    ],
+    "average_height": 198,
+    "average_weight": 250,
+    "speed": 30,
+    "ability_score_increases": [
+      {
+        "STR": 2,
+        "CHA": 1
+      }
+    ],
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
+    "features": [],
+    "class_specifics": [
+      {
+        "Draconic Ancestry": [
+          {
+            "color": "black",
+            "damage_type": "acid",
+            "damage_shape": "5' by 30' line",
+            "save": "DEX"
+          },
+          {
+            "color": "blue",
+            "damage_type": "lightning",
+            "damage_shape": "5' by 30' line",
+            "save": "DEX"
+          },
+          {
+            "color": "brass",
+            "damage_type": "fire",
+            "damage_shape": "5' by 30' line",
+            "save": "DEX"
+          },
+          {
+            "color": "bronze",
+            "damage_type": "lightning",
+            "damage_shape": "5' by 30' line",
+            "save": "DEX"
+          },
+          {
+            "color": "copper",
+            "damage_type": "acid",
+            "damage_shape": "5' by 30' line",
+            "save": "DEX"
+          },
+          {
+            "color": "gold",
+            "damage_type": "fire",
+            "damage_shape": "15' cone",
+            "save": "DEX"
+          },
+          {
+            "color": "green",
+            "damage_type": "poison",
+            "damage_shape": "15' cone",
+            "save": "CON"
+          },
+          {
+            "color": "red",
+            "damage_type": "fire",
+            "damage_shape": "15' cone",
+            "save": "DEX"
+          },
+          {
+            "color": "silver",
+            "damage_type": "cold",
+            "damage_shape": "15' cone",
+            "save": "CON"
+          },
+          {
+            "color": "white",
+            "damage_type": "cold",
+            "damage_shape": "15' cone",
+            "save": "CON"
+          }
+        ]
+      }
+    ],
+    "subclasses": [
+      "Draconblood",
+      "Ravenite"
+    ]
+  },
+  {
     "name": "Dwarf",
-    "height_max":
+    "size": "Medium",
+    "average_lifespan": 350,
+    "average_maturity": 50,
+    "common_alignments": [
+      "LG",
+      "LN",
+      "NG"
+    ],
+    "average_height": 137,
+    "average_weight": 150,
+    "speed": 25,
+    "ability_score_increases": [
+      {
+        "CON": 2
+      }
+    ],
+    "languages": [
+      "Common",
+      "Dwarvish"
+    ],
+    "features": [
+      "Darkvision",
+      "Dwarven Resilience",
+      "Dwarven Combat Training",
+      "Tool Proficiency",
+      "Stonecunning"
+    ],
+    "class_specifics": [
+      "Your speed is not reduced by wearing heavy armor"
+    ],
+    "subclasses": [
+      "Hill Dwarf",
+      "Mountain Dwarf",
+      "Duergar",
+      "Mark of Warding Dwarf"
+    ]
+  },
+  {
+    "name": "Elf",
+    "size": "Medium",
+    "average_lifespan": 750,
+    "average_maturity": 100,
+    "common_alignments": [
+      "CG",
+      "CN",
+      "NG"
+    ],
+    "average_height": 168,
+    "average_weight": ,
+    "speed": 30,
+    "ability_score_increases": [
+      {
+        "DEX": 2
+      }
+    ],
+    "languages": [
+      "Common",
+      "Elven"
+    ],
+    "features": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Trance",
+      "Keen Senses"
+    ],
+    "class_specifics": [
+      {
+        
+      }
+    ],
+    "subclasses": [
+      "Dark Elf",
+      "Eladrin",
+      "High Elf",
+      "Sea Elf",
+      "Shadar-Kai",
+      "Wood Elf",
+      "Pallid Elf",
+      "Mark of Shadow Elf"
+    ]
+  },
+  {
+    "name": "Gnome",
+    "size": "Small",
+    "average_lifespan": 350,
+    "average_maturity": 40,
+    "common_alignments": [
+      "CG",
+      "NG",
+      "LG"
+    ],
+    "average_height": 107,
+    "average_weight": 40,
+    "speed": 25,
+    "ability_score_increases": [
+      {
+        "INT": 2
+      }
+    ],
+    "languages": [
+      "Common",
+      "Gnomish"
+    ],
+    "features": [
+      "Darkvision",
+      "Gnome Cunning"
+    ],
+    "class_specifics": [
+      {
+        
+      }
+    ],
+    "subclasses": [
+      "Forest Gnome",
+      "Rock Gnome",
+      "Svirfneblin",
+      "Mark of Scribing Gnome"
+    ]
+  },
+  {
+    "name": "Half-Elf",
+    "size": "Medium",
+    "average_lifespan": 180,
+    "average_maturity": 20,
+    "common_alignments": [
+      "CG",
+      "CN",
+      "CE"
+    ],
+    "average_height": 168,
+    "average_weight": 250,
+    "speed": 30,
+    "ability_score_increases": [
+      {
+        "CHA": 2,
+        "CHOICE1": 1,
+        "CHOICE2": 1
+      }
+    ],
+    "languages": [
+      "Common",
+      "Elven",
+      "CHOICE1"
+    ],
+    "features": [
+      "Darkvision",
+      "Fey Ancestry"
+    ],
+    "class_specifics": [
+      {
+        "Half-Elf Versatility": [
+          "Skill Versatility",
+          "Elf Weapon Training",
+          "Cantrip",
+          "Fleet of Foot",
+          "Mask of the Wild",
+          "Drow Magic",
+          "Swim Speed"
+        ]
+      }
+    ],
+    "subclasses": [
+      "Mark of Detection",
+      "Mark of Storm"
+    ]
+  },
+  {
+    "name": "Half-Orc",
+    "size": "Medium",
+    "average_lifespan": 75,
+    "average_maturity": 14,
+    "common_alignments": [
+      "CE",
+      "CN"
+    ],
+    "average_height": 180,
+    "average_weight": ,
+    "speed": 30,
+    "ability_score_increases": [
+      {
+        "STR": 2,
+        "CON": 1
+      }
+    ],
+    "languages": [
+      "Common",
+      "Orc"
+    ],
+    "features": [
+      "Darkvision",
+      "Menacing",
+      "Relentless Endurance",
+      "Savage Attacks"
+    ],
+    "class_specifics": [
+      {
+        
+      }
+    ],
+    "subclasses": [
+      "Mark of Finding"
+    ]
+  },
+  {
+    "name": "Halfling",
+    "size": "Medium",
+    "average_lifespan": 150,
+    "average_maturity": 20,
+    "common_alignments": [
+      "LG"
+    ],
+    "average_height": 91,
+    "average_weight": 40,
+    "speed": 25,
+    "ability_score_increases": [
+      {
+        "DEX": 2
+      }
+    ],
+    "languages": [
+      "Common",
+      "Halfling"
+    ],
+    "features": [
+      "Lucky",
+      "Brave",
+      "Nimble"
+    ],
+    "class_specifics": [],
+    "subclasses": [
+      "Lightfoot Halfling",
+      "Stout Halfling",
+      "Ghostwise Halfling",
+      "Lotusden Halfling",
+      "Mark of Hospitality Halfling",
+      "Mark of Healing Halfling"
+    ]
+  },
+  {
+    "name": "Human"
+  },
+  {
+    "name": "Tiefling"
   }
 ]
