@@ -88,9 +88,9 @@ fn main() {
     };
 
     // Print data
-    println!("Race: {}", character.race);
-    println!("Class: {}", character.class);
-    println!("Background: {}", character.background);
-    println!("Attributes (chosen): {:?}", character.attributes_chosen);
-    println!("Attributes (all): {:?}", character.attributes_raw);
+    println!("{0: <20}: {1}", "Race", character.race);
+    println!("{0: <20}: {1}", "Class", character.class);
+    println!("{0: <20}: {1}", "Background", character.background);
+    println!("{0: <20}: {1}", "Attributes (chosen)", character.attributes_chosen);
+    println!("{0: <20}: {1:?}", "Attributes (all)", character.attributes_raw);
 }
