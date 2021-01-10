@@ -2,17 +2,36 @@ extern crate rand;
 extern crate yaml_rust;
 
 use rand::seq::SliceRandom;
+use std::fmt::{self, Formatter, Display};
 use std::io::Read;
 use yaml_rust::{YamlLoader, Yaml};
 use rand::Rng;
 
-#[derive(Debug)]
 struct Character<'a> {
     race: &'a String,
     class: &'a String,
     background: &'a String,
     attributes_raw: &'a Vec<i32>,
     attributes_chosen: &'a String
+}
+
+impl Display for Character<'_> {
+    // `f` is a buffer, and this method must write the formatted string into it
+    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+        // `write!` is like `format!`, but it will write the formatted string
+        // into a buffer (the first argument)
+        write!(f, "{0: <20}: {1}\n\
+            {2: <20}: {3}\n\
+            {4: <20}: {5}\n\
+            {6: <20}: {7}\n\
+            {8: <20}: {9:?}",
+            "Race", self.race,
+            "Class", self.class,
+            "Background", self.background,
+            "Attributes (chosen)", self.attributes_chosen,
+            "Attributes (all)", self.attributes_raw
+        )
+    }
 }
 
 fn get_vec_from_yaml(y: &Yaml) -> Vec<String> {
@@ -88,9 +107,5 @@ fn main() {
     };
 
     // Print data
-    println!("{0: <20}: {1}", "Race", character.race);
-    println!("{0: <20}: {1}", "Class", character.class);
-    println!("{0: <20}: {1}", "Background", character.background);
-    println!("{0: <20}: {1}", "Attributes (chosen)", character.attributes_chosen);
-    println!("{0: <20}: {1:?}", "Attributes (all)", character.attributes_raw);
+    println!("{}", character);
 }
